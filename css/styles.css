@@ -51,8 +51,6 @@ button {
 }
 
 .info-header {
-  font-size: 36px;
-  font-weight: 900;
   color: #1f2937;
   margin: 31px 0;
 }
@@ -70,9 +68,24 @@ button {
   border-radius: 10px;
 }
 
+.quote {
+  background-color: #e5e7eb;
+  font-style: italic;
+}
+
+.quote div {
+  width: 696px;
+}
+
+.quote_author {
+  font-size: initial;
+  text-align: right;
+}
+
 /* grouping selector */
 header,
-.info {
+.info,
+.quote {
   padding: 0 183px;
   height: 366px;
 }
@@ -81,6 +94,13 @@ button,
 .logo_text,
 .hero_main_text {
   color: #f9faf8;
+}
+
+button,
+.logo_text,
+.hero_main_text,
+.quote_author,
+.info-header {
   font-weight: 900;
 }
 
@@ -95,13 +115,21 @@ ul,
 .hero_content,
 .hero_image,
 .collection,
-.image {
+.image,
+.quote {
   display: flex;
 }
 
 nav,
-.hero_image {
+.hero_image,
+.quote {
   align-items: center;
+}
+
+.hero_image,
+.collection,
+.quote {
+  justify-content: center;
 }
 
 .hero_main_text,
@@ -114,9 +142,9 @@ nav,
   gap: 32px;
 }
 
-.hero_image,
-.collection {
-  justify-content: center;
+.info-header,
+.quote {
+  font-size: 36px;
 }
 
 /* descendant combinator */
