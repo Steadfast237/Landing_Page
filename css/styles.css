@@ -1,0 +1,93 @@
+/* universal selector */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* type selector */
+header {
+  padding: 0 183px;
+  height: 366px;
+  background-color: #1f2937;
+}
+
+nav {
+  justify-content: space-between;
+  margin-bottom: 76px;
+  padding-top: 8px;
+}
+
+ul {
+  list-style: none;
+  gap: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: #3882f6;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* class selector */
+.logo_text {
+  font-size: 24px;
+}
+
+.hero_content {
+  gap: 32px;
+}
+
+.hero_main_text {
+  font-size: 48px;
+  line-height: 0.9;
+}
+
+.hero_image {
+  justify-content: center;
+  background-color: #e5e7eb;
+}
+
+/* id selector */
+/* grouping selector */
+nav,
+ul,
+.hero_content,
+.hero_image {
+  display: flex;
+}
+
+nav,
+.hero_image {
+  align-items: center;
+}
+
+button,
+.logo_text,
+.hero_main_text {
+  color: #f9faf8;
+  font-weight: 900;
+}
+
+a,
+.hero_secondary_text {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.hero_main_text,
+.hero_secondary_text {
+  margin-bottom: 8px;
+}
+
+/* chaining selector */
+/* descendant combinator */
+.hero_content div {
+  flex-basis: 0;
+  flex-grow: 1;
+}
