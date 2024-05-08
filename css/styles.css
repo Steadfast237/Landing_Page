@@ -6,10 +6,9 @@
 }
 
 /* type selector */
-header {
-  background-color: #1f2937;
+footer {
+  padding: 24px;
 }
-
 nav {
   justify-content: space-between;
   margin-bottom: 76px;
@@ -100,6 +99,11 @@ button {
 
 /* grouping selector */
 header,
+footer {
+  background-color: #1f2937;
+}
+
+header,
 .info,
 .quote,
 .cta {
@@ -108,6 +112,7 @@ header,
   height: 366px;
 }
 
+footer,
 h3,
 button,
 .logo_text,
@@ -134,6 +139,7 @@ a,
   color: #e5e7eb;
 }
 
+footer,
 nav,
 ul,
 .hero_content,
@@ -145,12 +151,14 @@ ul,
   display: flex;
 }
 
+footer,
 nav,
 .hero_image,
 .quote {
   align-items: center;
 }
 
+footer,
 .hero_image,
 .collection,
 .quote {
