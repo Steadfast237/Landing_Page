@@ -27,7 +27,7 @@ a {
 
 button {
   background-color: #3882f6;
-  padding: 8px 16px;
+  padding: 8px 32px;
   border: none;
   border-radius: 5px;
 }
@@ -82,14 +82,33 @@ button {
   text-align: right;
 }
 
+.cta {
+  padding: 115px 0;
+}
+
+.cta-container {
+  padding: 48px 0;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-color: #3882f6;
+  border-radius: 10px;
+}
+
+.btn-white {
+  border: 2px solid #f9faf8;
+}
+
 /* grouping selector */
 header,
 .info,
-.quote {
-  padding: 0 183px;
+.quote,
+.cta {
+  padding-left: 183px;
+  padding-right: 183px;
   height: 366px;
 }
 
+h3,
 button,
 .logo_text,
 .hero_main_text {
@@ -107,6 +126,11 @@ button,
 a,
 .hero_secondary_text {
   font-size: 18px;
+}
+
+a,
+.hero_secondary_text,
+.cta_secondary_text {
   color: #e5e7eb;
 }
 
@@ -116,7 +140,8 @@ ul,
 .hero_image,
 .collection,
 .image,
-.quote {
+.quote,
+.cta-container {
   display: flex;
 }
 
